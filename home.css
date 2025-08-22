@@ -6,6 +6,7 @@
     --cor-cinza:#6d7d8c;
     --cor-branca:#fff;
     --cor-sombras: rgba(0, 0, 0, .1);
+    --cor-fundo:#f1f1f1;
 }
 
 *{
@@ -26,6 +27,7 @@ html{
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
+    background-color: var(--cor-fundo);
 }
 
 /* Cabeçalho do site*/
@@ -53,10 +55,6 @@ header{
 .logo img{
     margin-left: 20px;
     width: 100%;;
-}
-
-nav.menu-principal{
-    margin-left: auto;
 }
 
 .menu-principal a{
@@ -112,7 +110,7 @@ nav.menu-principal{
     cursor: pointer;
     padding: 1.2rem;
     margin-left: 10px;
-    border-radius: 3rem 0.7rem;
+    border-radius: 1rem ;
     text-decoration: none;
 }
 
@@ -123,7 +121,22 @@ nav.menu-principal{
 
 /* Slide Destaque do Site */
 
-.destaque-inicial{
+.destaque-inicial1{
+    padding: 2rem 7%;
+    background-image: url(img/slide/fundo2.jpg);
+    width: 100%;
+    height: 800px;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.destaque-inicial1 img{
+    height: 841px;
+    margin-left: 10rem;
+}
+.destaque-inicial2{
     padding: 2rem 7%;
     background-image: url(img/slide/fundo3.jpg);
     width: 100%;
@@ -134,8 +147,8 @@ nav.menu-principal{
     background-repeat: no-repeat;
 }
 
-.destaque-inicial img{
-    height: 862px;
+.destaque-inicial2 img{
+    height: 841px;
     margin-left: 10rem;
 }
 
@@ -189,6 +202,7 @@ nav.menu-principal{
 .btnSaibaMais:hover{
     background-color: var(--cor-cinza);
     transition: 0.5s;
+    padding: 1.3rem;
 }
 
 .destaque-btn-2{
@@ -203,4 +217,140 @@ nav.menu-principal{
 .destaque-btn-2:hover{
     background-color: var(--cor-cinza);
     transition: 0.5s;
+    padding: 1.3rem;
+}
+
+.vitalSlider{
+    box-shadow: 0 .5rem 1rem var(--cor-sombras);
+    max-height: 945px;
+}
+
+#especialidades{
+    text-align: center;
+    padding: 4rem;
+    font-size: 1.5rem;
+}
+
+#especialidades h2{
+    padding: 1rem;
+}
+
+#especialidades p{
+    color: var(--cor-cinza);
+}
+
+.espec-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 130rem;
+    padding: 30px 50px;
+
+}
+
+.geral{
+    padding: 20px;
+    width: 24%;
+    background-color: var(--cor-branca);
+    border-radius: 15px;
+}
+
+.fa-handshake{
+    margin: 1rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+    background-color: #dbeafe;
+}
+
+.fa-handshake:hover{
+    padding: 1.3rem;
+    transition: 0.5s;
+}
+
+.dermatologia{
+    padding: 20px;
+    width: 24%;
+    background-color: var(--cor-branca);
+    border-radius: 15px;
+}
+
+.fa-hand{
+    margin: 1rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+    background-color: #dcfce7;
+}
+
+.fa-hand:hover{
+    padding: 1.3rem;
+    transition: 0.5s;
+}
+
+.pediatria{
+    padding: 20px;
+    width: 24%;
+    background-color: var(--cor-branca);
+    border-radius: 15px;
+}
+
+.fa-face-smile{
+    margin: 1rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+    background-color: #f3e8ff;
+}
+
+.fa-face-smile:hover{
+    padding: 1.3rem;
+    transition: 0.5s;
+}
+
+.cardiologia{
+    padding: 20px;
+    width: 24%;
+    background-color: var(--cor-branca);
+    border-radius: 15px;
+}
+
+.fa-heart{
+    margin: 1rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+    background-color: #fee2e2;
+}
+
+.fa-heart:hover{
+    padding: 1.3rem;
+    transition: 0.5s;
+}
+
+.caracteristicas{
+    background-color: var(--cor-branca);
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+.carac-container{
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 140px;
+}
+
+ i{
+    background-color: #dbeafe;
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+
+.carac-container h2{
+    padding: 1rem;
+}
+
+.carac-container p{
+    color: var(--cor-cinza);
 }

@@ -3,40 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Clínica VitalCare</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <header>
+        <!--LOGO DA CLINICA-->
         <div class="logo">
                 <figure>
                     <img src="img/logoVitalCare.png" alt="Clínica VitalCare">
                 </figure>
         </div>  
-
+        <!-- NAVECAÇÃO -->
         <nav class="menu-principal">
             <a href="home.html" title="Página inicial">Início</a>
+            <a href="#especialidades" title="Especialidades">Especialidades</a>
+            <a href="#equipe" title="Equipe">Equipe</a>
             <a href="#sobre" title="Sobre">Sobre</a>
-            <a href="#servicos" title="Serviços">Serviços</a>
-            <a href="#medicos" title="Médicos">Médicos</a>
             <a href="#galeria" title="Galeria">Galeria</a>
             <a href="#contato" title="Contato">Contato</a>
-            <a href="login.html" title="Entrar">Entrar</a>
         </nav>  
-
+        <!-- BOTÂO AGENDAR CONSULTA-->
         <div class="icone-menu">
+
+
+            
             <div id="menu-celular" class="fa fa-bars"></div>
-            <a class="btn" title="Agendar Consulta">Agendar Consulta</a>
+            <a class="btn" title="Login">Entrar</a>
         </div>
         
     </header>
     <main>
+    <!--DESTAQUE PRINCIPAL-->
     <div class="swiper vitalSlider">
         <div class="swiper-Wrapper">
+            <!-- SLIDE PRINCIPAL -->
             <div class="swiper-slide slide">
 
-                <div class="destaque-inicial">
+                <div class="destaque-inicial1">
 
                     <div class="destaque-bloco">
 
@@ -48,7 +54,36 @@
                             </p>
 
                             <div class="destaque-btn">
-                                <a href=""class="btnSaibaMais">Saiba Mais</a>
+                                <a href="" class="btnSaibaMais">Saiba Mais</a>
+                                <a href="" class="destaque-btn-2"> Agendar Consulta</a>
+                            </div>
+                        </div>
+
+                        <div class="destaque-direito-conteudo">
+                            <img src="img/slide/medico2.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- SLIDE SEGUNDARIO -->
+            <div class="swiper-slide slide">
+
+                <div class="destaque-inicial2">
+
+                    <div class="destaque-bloco">
+
+                        <div class="destaque-esquerdo-conteudo">
+                            <span>Seja Bem-Vindo a nossa clínica</span>
+                            <h2>Cuidamos da sua saúde <br> com excelência</h2>
+                            <p class="destaque-descricao">
+                                Tecnologia avançada e atendimento humanizado para você e sua família
+                            </p>
+
+                            <div class="destaque-btn">
+                                <a href="" class="btnSaibaMais">Saiba Mais</a>
                                 <a href="" class="destaque-btn-2"> Agendar Consulta</a>
                             </div>
                         </div>
@@ -63,10 +98,71 @@
 
             </div>
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
 
+    <section id="especialidades">
+        <h2>Nossas Especialidades</h2>
+        <p>Cuidados medicos completos para você e sua família</p>
+        
+        <div class="espec-container">   
+            <div class="geral">
+                <i class="fa-regular fa-handshake" style="color: #2563eb;"></i>
+                <h3>Clínica Geral</h3>
+                <p>Atendimento médico completo</p>
+            </div>
+
+            <div class="dermatologia">
+                <i class="fa-regular fa-hand" style="color: #16a34a;"></i>
+                <h3>Dermatologia</h3>
+                <p>Atendimento médico completo</p>
+            </div>
+
+            <div class="pediatria">
+                <i class="fa-regular fa-face-smile" style="color: #9333ea;"></i>
+                <h3>Pediatria</h3>
+                <p>Cuidados infantis</p>
+            </div>
+
+            <div class="cardiologia">
+                <i class="fa-regular fa-heart" style="color: #dc2626;"></i>
+                <h3>Cardiologia</h3>
+                <p>Saúde do coração</p>
+            </div>
+        </div> 
+    </section>
+
+    <section class="caracteristicas">
+        <div class="carac-container">
+            <div class="tempo">
+                 <i class="fa-regular fa-clock" style="color: #2563eb;"></i>
+                <h2>Atendimento Rápido</h2>
+                <p>Agendamento online e tempo de espera reduzido</p>
+            </div>
+
+            <div class="garantia">
+                <i class="fa-regular fa-circle-check" style="color: #2563eb;"></i>
+                <h2>Qualidade Garantida</h2>
+                <p>Profissionais especializados e equipamentos modernos</p>
+            </div>
+
+            <div class="humanizado">
+                <i class="fa-regular fa-user" style="color: #2563eb;"></i>
+                <h2>Atendimento Humanizado</h2>
+                <p>Cuidamos de você com carinho e atenção</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe">
+
+    </section>
+
     </main>
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" async></script>
      <script src="vitalCare.js"></script>
 </body>
 </html>
