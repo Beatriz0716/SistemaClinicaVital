@@ -597,6 +597,124 @@ button{
 button:hover{
     background-color: var(--cor-cinza);
 }
+/*TABLET/MONITOR PEQUENO*/
+@media screen and (max-width: 1170px){
+    html{
+        min-width: 40px;
+    }
+
+    .menu-principal, .btn{
+        display: none;
+    }
+
+    .destaque-direito-conteudo{
+        display: none;
+    }
+
+    .destaque-esquerdo-conteudo{
+        padding-top: 10rem;
+        display: grid;
+        width: 100%;
+        max-width: 110%;
+        margin: auto;
+    }
+
+    .destaque-esquerdo-conteudo span{
+        font-size: 2.7rem;
+        text-align: center;
+    }
+
+    .destaque-esquerdo-conteudo h2{
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .destaque-btn{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: auto;
+        gap: 2rem;
+    }
+
+    .destaque-btn-2{
+        margin-top: 0;
+
+    }
+
+    #especialidades{
+        padding: 1rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .espec-container{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        gap: 10px;
+    }
+
+
+    .carac-container{
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto;
+        width: 90%;
+        gap: 20px;
+        
+    }
+    
+    #sobre{
+        display: grid;
+        grid-column: auto auto;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding: 4rem 0;
+    }
+    
+
+    .descricaoSobre, .imgSobre{
+        width: 80%;
+        margin: auto;
+    }
+
+    .imgSobre img{
+        width: 100%;
+    }
+
+    #equipe h2{
+        padding-bottom: 1rem;
+    }
+
+    .medicos{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        padding: 0;
+    }
+
+    .medCardiologista, .medPediatra, .medDermatologista, .medGeral{
+        width: 280px;
+    }
+
+    .conteudoFooter{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 15px;
+    }
+
+    input{
+        font-size: 1rem;
+        border-radius: 0.7rem;
+        margin: 1rem 0;
+    }
+
+    button{
+        font-size: 1rem;
+        border-radius: 0.7rem;
+    }
+}
 
 /*CELULAR*/
 @media screen and (max-width: 670px){
@@ -624,7 +742,7 @@ button:hover{
 
     .destaque-esquerdo-conteudo{
         display: grid;
-        width: 45%;
+        width: 100%;
         max-width: 110%;
         margin: 0;
     }
@@ -688,6 +806,7 @@ button:hover{
 
     .medicos{
         display: grid;
+        grid-template-columns: auto;
         gap: 20px;
         padding: 0;
     }
@@ -703,6 +822,7 @@ button:hover{
 
     .conteudoFooter{
         display: grid;
+        grid-template-columns: auto;
         height:auto;
     }
 
@@ -716,4 +836,4 @@ button:hover{
         font-size: 1rem;
         border-radius: 0.7rem;
     }
-}   
+}
