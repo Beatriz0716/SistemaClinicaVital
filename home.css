@@ -136,35 +136,20 @@ header{
     height: 841px;
     margin-left: 10rem;
 }
-.destaque-inicial2{
-    padding: 2rem 7%;
-    background-image: url(img/slide/fundo3.jpg);
-    width: 100%;
-    height: 800px;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.destaque-inicial2 img{
-    height: 841px;
-    margin-left: 10rem;
-}
 
 .destaque-bloco{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 1rem;
     margin-top: 6rem;
-    justify-content: space-between;
-    align-items: center;
-    
+    justify-content: space-around;
+  
 }
 
 .destaque-esquerdo-conteudo{
+    width: 100%;
     margin: auto;
-    margin-top: 20rem;
+    margin-top: auto;
 }
 
 .destaque-esquerdo-conteudo span{
@@ -187,13 +172,18 @@ header{
 }
 
 .destaque-btn{
+    display: flex;
+    flex-direction: column;
     margin-top: 1.5rem;
 }
 
 
 .btnSaibaMais{
+    width: 130px;
+    height: 100%;
+    padding: 10px;
     background-color: var(--cor-principal);
-    padding: 1.2rem;
+    text-align: center;
     color: var(--cor-branca);
     font-size: 1.5rem;
     border-radius: 1rem;
@@ -202,22 +192,23 @@ header{
 .btnSaibaMais:hover{
     background-color: var(--cor-cinza);
     transition: 0.5s;
-    padding: 1.3rem;
 }
 
 .destaque-btn-2{
+    width: 195px;
+    height: 100%;
+    padding: 10px 10px;
     background-color: var(--mscor);
-    padding: 1.2rem;
+    text-align: center;
     color: var(--cor-branca);
     font-size: 1.5rem;
-    margin: 1rem;
+    margin-top: 1rem;
     border-radius: 1rem ;
 }
 
 .destaque-btn-2:hover{
     background-color: var(--cor-cinza);
     transition: 0.5s;
-    padding: 1.3rem;
 }
 
 .vitalSlider{
@@ -250,7 +241,7 @@ header{
     align-items: center;
 }
 
-.geral{
+.geral, .dermatologia, .pediatria, .cardiologia{
     padding: 20px;
     width: 100%;
     background-color: var(--cor-branca);
@@ -264,13 +255,6 @@ header{
     background-color: #dbeafe;
 }
 
-.dermatologia{
-    padding: 20px;
-    width: 100%;
-    background-color: var(--cor-branca);
-    border-radius: 15px;
-}
-
 .fa-hand{
     margin: 1rem;
     padding: 1.2rem;
@@ -278,25 +262,11 @@ header{
     background-color: #dcfce7;
 }
 
-.pediatria{
-    padding: 20px;
-    width: 100%;
-    background-color: var(--cor-branca);
-    border-radius: 15px;
-}
-
 .fa-face-smile{
     margin: 1rem;
     padding: 1.2rem;
     border-radius: 10px;
     background-color: #f3e8ff;
-}
-
-.cardiologia{
-    padding: 20px;
-    width: 100%;
-    background-color: var(--cor-branca);
-    border-radius: 15px;
 }
 
 .fa-heart{
@@ -316,11 +286,9 @@ header{
 .carac-container{
     margin: 30px 0 30px 0;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 30px 140px;
 }
 
 .fa-user, .fa-circle-check, .fa-clock{
@@ -340,6 +308,7 @@ header{
 #sobre{
     display: flex;
     justify-content: space-around;
+    gap: 30px;
     align-items: center;
     padding: 6rem;
 }
@@ -419,18 +388,19 @@ header{
 .medicos{
     display: flex;
     justify-content: space-around;
+    gap: 10px;
     padding: 3rem;
 }
 
 .medCardiologista img, .medPediatra img, .medDermatologista img, .medGeral img{
-    height: 300px;
-    width: 400px;
+    height: 65%;
+    width: 100%;
     border-radius: 2rem 2rem 0 0;
 }
 
 .medCardiologista, .medPediatra, .medDermatologista, .medGeral{
-    height: 425px;
-    width: 400px;
+    min-width: 200px;
+    width: 300px;
     border-radius: 2rem;
     box-shadow: 0 .5rem 1rem var(--cor-sombras);
 }
@@ -583,6 +553,7 @@ footer p{
     color: var(--cor-branca);
 }
 
+
 .vitalCare span, .novidades span{
     font-size: 1.2rem;
     color: var(--cor-cinza);
@@ -626,3 +597,123 @@ button{
 button:hover{
     background-color: var(--cor-cinza);
 }
+
+/*CELULAR*/
+@media screen and (max-width: 670px){
+    html{
+        min-width: 40px;
+    }
+
+    .menu-principal, .btn{
+        display: none;
+    }
+
+    .destaque-inicial1{
+        padding: 2rem;
+        height: 100px;
+        min-height: 680px;
+    }
+
+    .destaque-bloco{
+        flex-direction: column;
+    }
+
+    .destaque-bloco img{
+        display: none;
+    }
+
+    .destaque-esquerdo-conteudo{
+        display: grid;
+        width: 45%;
+        max-width: 110%;
+        margin: 0;
+    }
+
+    .destaque-esquerdo-conteudo span{
+        font-size: 140%;
+    }
+
+    .destaque-esquerdo-conteudo h2{
+        font-size: 280%;
+    }
+
+    #especialidades{
+        padding: 1rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .espec-container{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        gap: 10px;
+    }
+
+
+    .carac-container{
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto;
+        width: 90%;
+        gap: 20px;
+        
+    }
+
+    #sobre{
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        display: grid;
+        padding: 4rem 2rem;
+        width: 95%;
+    }
+
+    .imgSobre img{
+        width: 90%;
+        max-width: 450px;
+        height: 250px;
+        border-radius: 15px;
+        box-shadow: 1rem 1rem 1.5rem var(--cor-sombras);
+    }
+
+    .descricaoSobre{
+        margin: auto;
+        width: 95%;
+    }
+
+    #equipe h2{
+        padding-bottom: 1rem;
+    }
+
+    .medicos{
+        display: grid;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .medCardiologista, .medPediatra, .medDermatologista, .medGeral{
+        width: 280px;
+    }
+
+    .containerInfo{
+        display: grid;
+        gap: 50px;
+    }
+
+    .conteudoFooter{
+        display: grid;
+        height:auto;
+    }
+
+    input{
+        font-size: 1rem;
+        border-radius: 0.7rem;
+        margin: 1rem 0;
+    }
+
+    button{
+        font-size: 1rem;
+        border-radius: 0.7rem;
+    }
+}   
