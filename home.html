@@ -10,29 +10,27 @@
 </head>
 <body>
     <header>
-        <!--LOGO DA CLINICA-->
-        <div class="logo">
-                <figure>
-                    <img src="img/logoVitalCare.png" alt="Clínica VitalCare">
-                </figure>
-        </div>  
-        <!-- NAVECAÇÃO -->
-        <nav class="menu-principal">
-            <a href="home.html" title="Página inicial">Início</a>
-            <a href="#especialidades" title="Especialidades">Especialidades</a>
-            <a href="#sobre" title="Sobre">Sobre</a>
-            <a href="#equipe" title="Equipe">Equipe</a>
-            <a href="#contato" title="Contato">Contato</a>
-        </nav>  
-        <!-- BOTÂO AGENDAR CONSULTA-->
-        <div class="icone-menu">
-
-
-            
-            <div id="menu-celular" class="fa fa-bars"></div>
-            <a class="btn" title="Login">Entrar</a>
+        <div id="menu">
+            <div id="menu-celular" class="fa fa-bars" onclick="clickMenu()"></div>
+            <!--LOGO DA CLINICA-->
+            <div class="logo" id="logo">
+                    <figure>
+                        <a href="home.html"><img src="img/logoVitalCare.png" alt="Clínica VitalCare"></a>
+                    </figure>
+            </div>  
+            <!-- BOTÂO AGENDAR CONSULTA-->
+            <div class="icone-menu">
+                <a class="btn" id="btn" title="Login">Entrar</a>
+            </div>
+            <!-- NAVECAÇÃO -->
+            <nav class="menu-principal" id="itens">
+                <a href="home.html" title="Página inicial">Início</a>
+                <a href="#especialidades" title="Especialidades">Especialidades</a>
+                <a href="#sobre" title="Sobre">Sobre</a>
+                <a href="#equipe" title="Equipe">Equipe</a>
+                <a href="#contato" title="Contato">Contato</a>
+            </nav>  
         </div>
-        
     </header>
     <main>
     <!--DESTAQUE PRINCIPAL-->
@@ -46,7 +44,7 @@
                     <div class="destaque-bloco">
 
                         <div class="destaque-esquerdo-conteudo">
-                            <span>Seja Bem-Vindo a nossa clínica</span>
+                            <span>Seja Bem-Vindo a Nossa clínica</span>
                             <h2>Cuidamos da sua saúde <br> com excelência</h2>
                             <span class="destaque-descricao">
                                 Tecnologia avançada e atendimento humanizado para você e sua família
